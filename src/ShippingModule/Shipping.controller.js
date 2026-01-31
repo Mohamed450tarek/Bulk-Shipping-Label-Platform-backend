@@ -1,6 +1,6 @@
  const shippingService = require('./shipping.service');
 const pricingService = require('./Pricing.service');
-const { asyncHandler } = require('../shared/middleware/errorhandler');
+const { asyncHandler }  = require('../shared/middleware/errorhandler');
 
 /**
  * Get pricing table

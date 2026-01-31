@@ -2,7 +2,7 @@
 const SavedPackage = require('./Package.model');
 const pricingService = require('./Pricing.service');
 const logger = require('../shared/logger');
-const { AppError } = require('../shared/middleware/errorHandler');
+const { AppError } = require('../shared/middleware/errorhandler');
 const { packageSchema, validateSchema } = require('../shared/Validation');
 
 class ShippingService {
