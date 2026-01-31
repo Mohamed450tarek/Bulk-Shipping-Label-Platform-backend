@@ -1,9 +1,9 @@
- const Batch = require('../Batchmodule/batch.model');
+ const Batch = require('../Batchmodule/Batch.model');
 const SavedPackage = require('./Package.model');
 const pricingService = require('./Pricing.service');
 const logger = require('../shared/logger');
 const { AppError } = require('../shared/middleware/errorHandler');
-const { packageSchema, validateSchema } = require('../shared/validation');
+const { packageSchema, validateSchema } = require('../shared/Validation');
 
 class ShippingService {
   /**
@@ -14,6 +14,7 @@ class ShippingService {
     if (!batch) {
       throw new AppError('Batch not found', 404, 'BATCH_NOT_FOUND');
     }
+
 
     const row = batch.rows.id(rowId);
     if (!row) {

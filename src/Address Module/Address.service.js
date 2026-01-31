@@ -1,9 +1,9 @@
- const SavedAddress = require('./address.model');
-const Batch = require('../Batchmodule/batch.model');
-const addressProvider = require('./address.provider');
+ const SavedAddress = require('./Address.model');
+const Batch = require('../Batchmodule/Batch.model');
+const addressProvider = require('./Address.provider');
 const logger = require('../shared/logger');
-const { AppError } = require('../shared/middleware/errorHandler');
-const { addressSchema, validateSchema } = require('../shared/validation');
+const { AppError } = require('../shared/middleware/errorhandler');
+const { addressSchema, validateSchema } = require('../shared/Validation');
 
 class AddressService {
   /**

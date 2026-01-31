@@ -1,4 +1,4 @@
-const addressService = require('./Address.service.js');
+const addressService = require('./Address.service');
 const { asyncHandler } = require('../shared/middleware/errorhandler');
 
 /**

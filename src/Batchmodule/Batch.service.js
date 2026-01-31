@@ -1,7 +1,7 @@
  const { parse } = require('csv-parse/sync');
-const Batch = require('./batch.model');
+const Batch = require('./Batch.model');
 const logger = require('../shared/logger');
-const { AppError } = require('../shared/middleware/errorHandler');
+const { AppError } = require('../shared/middleware/errorhandler');
 
 // CSV column mapping (maps CSV headers to internal field names)
 const CSV_COLUMN_MAP = {
