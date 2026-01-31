@@ -9,7 +9,7 @@ const logger = require('./shared/logger.js');
 // Import module routers
 const batchRoutes = require('./Batchmodule/Batch.routes.js');
 const addressRoutes = require('./AddressModule/Address.routes.js');
-const shippingRoutes = require('./ShippingModule/Shipping.routes.js');
+const shippingRoutes = require('./ShippingModule/shipping.routes.js');
 //const authRoutes = require('./auth service/authroute');
 
 const app = express();
