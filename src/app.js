@@ -3,7 +3,7 @@ const cors = require('cors');
 const path = require('path');
 
 const { errorHandler, notFoundHandler } = require('./shared/middleware/errorhandler.js');
-const { requestLogger } = require('./shared/middleware/requestLogger.js');
+const { requestLogger } = require('./shared/middleware/requestlogger');
 const logger = require('./shared/logger.js');
 
 // Import module routers
