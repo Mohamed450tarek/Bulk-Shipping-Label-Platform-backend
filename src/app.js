@@ -2,14 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 
-const { errorHandler, notFoundHandler } = require('./shared/middleware/errorhandler');
-const { requestLogger } = require('./shared/middleware/requestLogger');
-const logger = require('./shared/logger');
+const { errorHandler, notFoundHandler } = require('./shared/middleware/errorhandler.js');
+const { requestLogger } = require('./shared/middleware/requestLogger.js');
+const logger = require('./shared/logger.js');
 
 // Import module routers
-const batchRoutes = require('./Batchmodule/Batch.routes');
-const addressRoutes = require('./Address Module/Address.routes');
-const shippingRoutes = require('./Shipping Module/Shipping.routes');
+const batchRoutes = require('./Batchmodule/Batch.routes.js');
+const addressRoutes = require('./Address Module/Address.routes.js');
+const shippingRoutes = require('./Shipping Module/Shipping.routes.js');
 //const authRoutes = require('./auth service/authroute');
 
 const app = express();
