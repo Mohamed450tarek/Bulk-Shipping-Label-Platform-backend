@@ -1,0 +1,41 @@
+
+
+delete -example make file name .env
+
+JWT_SECRET = ********
+#---------------------------------
+ARCJET_KEY=*******
+ARCJET_ENV=development
+#---------------------------------------
+
+# --------------------------------------------
+PORT=3000
+NODE_ENV=development
+# Options: development, production, test
+
+# API Base URL (for generating label URLs)
+
+API_BASE_URL=http://localhost:3000
+
+
+#MONGODB_URI=mongodb://localhost:27017/bulk-shipping
+# For MongoDB Atlas:
+MONGO_URI=******************************************************************
+ 
+ 
+# --------------------------------------------
+# ADDRESS VALIDATION API
+# --------------------------------------------
+# Provider options: mock, usps, google
+                  ADDRESS_VALIDATION_PROVIDER=mock
+                  USPS_PASSWORD=****************
+                  USPS_USER_ID= ****************
+USPS_API_URL=https://secure.shippingapis.com/ShippingAPI.dll
+
+# Google Address Validation API (requires billing account)
+                # GOOGLE_ADDRESS_API_KEY=your_google_api_key
+GOOGLE_ADDRESS_API_URL=https://addressvalidation.googleapis.com/v1:validateAddress
+
+# Validation settings
+ADDRESS_VALIDATION_TIMEOUT=5000
+ADDRESS_VALIDATION_RETRY_COUNT=2
